@@ -25,4 +25,9 @@
 * Create a new folder in the repository using your username as the folder name
 * Put all your code in this folder
 * Do **not** copy the `images` directory into your folder; instead use relative
-  links for the image(s)
+  links for the image(s) - something like `<img src="../images/image1.jpg">` 
+
+## Bonus
+
+* Make the website responsive
+  * Add as many breakpoints as you think are necessary
