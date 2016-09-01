@@ -1,48 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Startup Matchmaker</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Trocchi|Volkhov:400,400i,700,700i" rel="stylesheet">
 </head>
+
 <body>
-	Startup Matchmaker
 
-	Developers
-	Designers
-	How it Works
-	Our Team
-	Blog
+	<header>
+		<div id="top" class="clearfix">
+			<h1>Startup Matchmaker</h1>
 
-	Because two brains taste are better than one.
+			<div class="navbar">
+				<ul>
+					<li><a id="first" class="nav" href="#">Developers</a></li>
+					<li><a id="second" class="nav" href="#">Designers</a></li>
+					<li><a class="nav" href="#">How it Works</a></li>
+					<li><a class="nav" href="#">Our Team</a></li>
+					<li><a class="nav" href="#">Blog</a></li>
+			</div>
+			</ul>
+		</div>
 
-	Meet your Match!
+		<div class="yellowline">
+		</div>
 
-	Have a great idea for a product, but need help making it a reality? We're
+		<div class="greybar">
+			<h2>Because two brains <s>taste</s> <span>are</span> better than one.<h2>
+</div>
+
+<div class="firstbox">
+	<h3>Meet your Match!</h3>
+	<p>Have a great idea for a product, but need help making it a reality? We're
 	here to help. Startup Matchmaker is the best place for designers and
-	developers to find each other.
+	developers to find each other.</p>
 
-	Create a Profile
+	<div class="button">
+		<a class="yellowbutton" href="#" onclick="document.querySelector('.firstbox').style.display = 'none';
+											document.querySelector('.boxbehind').style.display = 'inline-block'; ">Create a Profile</a>
+	</div>
+</div>
 
-	Create a Profile
+<div class="boxbehind">
+	<h3>Create a profile</h3>
+	<p>Email: _________________________</p>
+	<p>Password: ______________________</p>
+	<div class="button"><a class="smallyellow" href="#">Create</a></div>
+	<div class="button">
+		<a class="smallgrey" href="#" onclick="document.querySelector('.boxbehind').style.display = 'none';
+                       document.querySelector('.firstbox').style.display = 'inline-block'; ">Cancel</a>
+</div>
+</div>
+</header>
 
-	Are you a Designer? Developer? Put yourself out there so that others can
-	find you!
+	<!-- first section -->
+<div class="whitebackground">
+	<div class="profile">
+		<h2 class="secondbox">Create a Profile</h2>
 
-	Sign Up Now
+			<p>Are you a Designer? Developer? Put yourself out there so that others can find you!</p>
+			<div class="button2"><a class="greybutton" href="#">Sign Up Now</a></div>
+		</div>
 
-	Find a Developer
+		<div class="developer">
+			<h2 class="secondbox">Find a Developer</h2>
+			<p>Looking for a fantastic developer to work with on the next big thing? Look no further.</p>
+			<div class="button2"><a class="greybutton" href="#">Start Your Search</a></div>
+		</div>
 
-	Looking for a fantastic developer to work with on the next big thing? Look
-	no further.
+		<div class="designer">
+			<h2 class="secondbox">Find a Designer</h2>
+			<p>Need someone who can make a product intuitive and appealing? Get ready.</p>
+			<div class="button2"><a class="greybutton" href="#">Start Your Search</a></div>
+		</div>
+		</div>
+		<!-- whitebackground section -->
 
-	Start Your Search
-
-	Find a Designer
-
-	Need someone who can make a product intuitive and appealing? Get ready.
-
-	Start Your Search
-
-	&copy; 2016 Startup Matchmaker. Made in Singapore.
+		<div class="blackbar">
+			<footer>&copy; 2016 Startup Matchmaker. Made in Singapore.</footer>
+		</div>
 </body>
+
 </html>
