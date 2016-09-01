@@ -3,46 +3,89 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Startup Matchmaker</title>
+
+	<!-- external CSS links -->
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	Startup Matchmaker
 
-	Developers
-	Designers
-	How it Works
-	Our Team
-	Blog
+	<header>
+		<div class="logo">Startup Matchmaker</div>
+		<nav>
+			<ul>
+				<li><a href="#"><b>Developers</b></a></li>
+				<li><a href="#"><b>Designers</b></a></li>
+				<li><a href="#">How it Works</a></li>
+				<li><a href="#">Our Team</a></li>
+				<li><a href="#">Blog</a></li>
+		</nav>
+	</header>
 
-	Because two brains taste are better than one.
+	<div class="banner">
+		<div class="line"></div>
 
-	Meet your Match!
+		<div class="tagline">
+			Because two brains <s>taste</s> <u>are</u> better than one.
+		</div>
+	</div>
 
-	Have a great idea for a product, but need help making it a reality? We're
-	here to help. Startup Matchmaker is the best place for designers and
-	developers to find each other.
+	<div class="picture">
+		<img src="../images/coworking.jpg">
 
-	Create a Profile
+		<div class= "box">
+			<div class ="box1">
+				<h3>Meet your Match!</h3>
+				<p>Have a great idea for a product, but need help making it a reality? We're
+					here to help. Startup Matchmaker is the best place for designers and
+					developers to find each other.</p>
 
-	Create a Profile
+				<button type = "button" onclick="document.querySelector('.box1').classList.add('hidden');document.querySelector('.box2').classList.add('show')">Create a Profile</button>
+			</div>
 
-	Are you a Designer? Developer? Put yourself out there so that others can
-	find you!
+			<div class = "box2">
+				<b> Create a profile</b>
+				<p> Email: ____________</p>
+				<p> Password: ___________</p>
+				<button type = "button">CREATE</button>
+				<button type = "button" onclick="document.querySelector('.box1').classList.remove('hidden');document.querySelector('.box2').classList.remove('show')">CANCEL</button>
 
-	Sign Up Now
+			</div>
 
-	Find a Developer
+	</div>
 
-	Looking for a fantastic developer to work with on the next big thing? Look
-	no further.
+	<div class = "main">
+		<div class ="column1">
+		<h4>Create a Profile</h4>
 
-	Start Your Search
+		<p>Are you a Designer? Developer? Put yourself out there so that others can
+		find you!</p>
 
-	Find a Designer
+		<button type = "button">Sign Up Now</button>
+		</div>
 
-	Need someone who can make a product intuitive and appealing? Get ready.
+		<div class = "column2">
+		<h4>Find a Developer</h4>
 
-	Start Your Search
+		<p>Looking for a fantastic developer to work with on the next big thing? Look
+		no further.</p>
 
-	&copy; 2016 Startup Matchmaker. Made in Singapore.
+		<button type ="button">Start Your Search</button>
+		</div>
+
+		<div class = "column3">
+		<h4>Find a Designer</h4>
+
+		<p>Need someone who can make a product intuitive and appealing? Get ready.
+		</p>
+
+		<button type ="button">Start Your Search</button>
+		</div>
+
+	</div>
+
+	<footer>
+		&copy; 2016 Startup Matchmaker. Made in Singapore.
+	</footer>
+
 </body>
 </html>
