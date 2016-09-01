@@ -3,46 +3,69 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Startup Matchmaker</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
-	Startup Matchmaker
-
-	Developers
-	Designers
-	How it Works
-	Our Team
-	Blog
-
-	Because two brains taste are better than one.
-
-	Meet your Match!
-
-	Have a great idea for a product, but need help making it a reality? We're
-	here to help. Startup Matchmaker is the best place for designers and
-	developers to find each other.
-
-	Create a Profile
-
-	Create a Profile
-
-	Are you a Designer? Developer? Put yourself out there so that others can
-	find you!
-
-	Sign Up Now
-
-	Find a Developer
-
-	Looking for a fantastic developer to work with on the next big thing? Look
-	no further.
-
-	Start Your Search
-
-	Find a Designer
-
-	Need someone who can make a product intuitive and appealing? Get ready.
-
-	Start Your Search
-
-	&copy; 2016 Startup Matchmaker. Made in Singapore.
+    
+    <div class="main-container">
+        <header>
+            <h1 class="logo align-left">Startup Matchmaker</h1>
+            <nav class="align-right">
+                <ul>
+                    <li><a href="">Developers</a></li>
+                    <li><a href="">Designers</a></li>
+                    <li><a href="">How it Works</a></li>
+                    <li><a href="">Our Team</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="tagline">
+                <h1>Because two brains taste are better than one.</h1>
+            </section>
+            <section class="banner">
+                <section class="create-profile align-right box" id="1">
+                    <h1 class="box-header">Meet your Match!</h1>
+                    <p class="box-text">Have a great idea for a product, but need help making it a reality? We're
+	                   here to help. Startup Matchmaker is the best place for designers and
+	                   developers to find each other.
+                    </p>
+                    <p class="button"><a onclick="somefunction()">Create a Profile</a></p>
+                </section>
+                <section class="create-profile-dialog align-right box" id="2">
+                    <h1 class="box-header">Create a Profile</h1>
+                    <p class="box-text">Email:______________</p>
+                    <p class="box-text">Password:______________</p>
+                    <ul>
+                        <li><p class="button"><a>Create</a></p></li>
+                        <br>
+                        <li><p class="button"><a onclick="anotherfunction()">Cancel</a></p></li>
+                    </ul>
+                </section>
+            </section>
+            <section class ="options">
+                <section class="box">
+                    <h1>Create a Profile</h1>
+                    <p>Are you a Designer? Developer? Put yourself out there so that others can find you!</p>
+                    <p class="button"><a>Sign Up Now</a></p>
+                </section>
+                <section class="box">
+                    <h1>Find a Developer</h1>
+                    <p>Looking for a fantastic developer to work with on the next big thing? Look no further.</p>
+                    <p class="button"><a>Start Your Search</a></p>
+                </section>
+                <section class="box">
+                    <h1>Find a Designer</h1>
+                    <p>Need someone who can make a product intuitive and appealing? Get ready.</p>
+                    <p class="button"><a>Start Your Search</a></p>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p class="align-left">&copy; 2016 Startup Matchmaker. Made in Singapore.</p>
+        </footer>
+    </div>
 </body>
 </html>
