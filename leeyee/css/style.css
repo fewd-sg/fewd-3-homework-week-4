@@ -1,0 +1,499 @@
+
+/* Box Model Hack */
+
+* {
+    -moz-box-sizing: border-box;
+    /* Firexfox */
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box;
+    /* IE */
+}
+
+/* Clear fix hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clear {
+    clear: both;
+}
+.alignright {
+    float: right;
+    padding: 0 0 10px 10px;
+    /* note the padding around a right floated image */
+}
+.alignleft {
+    float: left;
+    padding: 0 10px 10px 0;
+    /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+#container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  font-family: Georgia,Times,Times New Roman,serif;
+}
+
+header h1, nav a, footer{
+  font-family: 'Proza Libre', sans-serif;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  border-bottom: 5px solid #f8e08e;
+  padding: 10px 20px;
+}
+
+header h1{
+  float: left;
+  margin-top: 10px;
+  padding: 0;
+  color: #f8e08e;
+  transition: all .2s ease-in-out;
+  cursor: crosshair;
+}
+
+nav ul{
+  float: right;
+}
+
+nav ul li{
+  float: left;
+  list-style: none;
+  padding: 0 10px;
+}
+
+.menu{
+  display:none;
+}
+
+nav a{
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+header h1, nav ul li {
+  display: inline-block;
+  vertical-align:top;
+}
+
+main{
+  margin-top: 80px;
+}
+
+#tagline{
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  background-color: #d3d3d3;
+  padding: 20px;
+}
+
+#tagline del{
+  color: #808080;
+}
+
+#tagline ins{
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 3px solid #ffb500;
+}
+
+#banner{
+  background: url(../../images/coworking.jpg) center center no-repeat rgb(134,141,157);
+  background-size: cover;
+  margin: 0px;
+  padding: 20px;
+}
+
+.act{
+  float: right;
+  background-color:rgba(255,255,255,0.5);
+  border: 2px dotted #ffb500;
+  border-radius: 5px;
+  padding: 30px;
+  width: 350px;
+  height: 350px;
+  margin: 20px;
+}
+
+.signupform{
+  display: none;
+}
+
+#pagenotice{
+  display: block;
+  background-color:rgba(255,255,255,0.5);
+  border: 2px dotted #ffb500;
+  border-radius: 5px;
+  padding: 30px;
+  width: 100%;
+}
+
+#pagenotice{
+  display: none;
+}
+
+.meetmatch>p{
+  padding: 20px 0;
+  text-align: justify;
+}
+
+.act>h2, .meetmatch>p{
+  margin-top: -10px;
+}
+
+.signupform input[type=text]{
+  display: block;
+  border-radius: 5px;
+}
+
+.signupform input {
+  margin: 10px 0;
+}
+
+.signupform a{
+  margin: 10px 0;
+}
+
+.button{
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  border-radius: 5px;
+  transition: all 1s ease;
+}
+
+.submit, .cancel{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-family: inherit;
+}
+
+.yellowprofile, .submit, #pagenotice .cancel{
+  background-color: #ffb500;
+  box-shadow: 0px 2px #e6a300;
+}
+
+#actions{
+  display: inline-block;
+  background-color:rgba(255,255,255);
+  padding: 20px 0;
+  margin-bottom: 60px;
+}
+
+#createprofile, #devsearch, #dessearch{
+  float: left;
+  width: 33%;
+  text-align: justify;
+  padding: 10px;
+  border-right: 1px dotted #ffb500;
+}
+
+.yellowprofile, .createprofile, .search{
+  padding: 10px 30px;
+}
+
+.createprofile, .search, .cancel{
+  background-color: #d3d3d3;
+  box-shadow: 0px 2px #c6c6c6;
+}
+
+#dessearch{
+  border-right: none;
+}
+
+#banner, #actions{
+  line-height: 1.3;
+}
+
+h2{
+  color: #033048;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  color: #ffffff;
+  border-top: 5px solid #f8e08e;
+  padding: 20px;
+}
+
+/*font sizes & font weight*/
+header h1{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+nav a, #tagline p, h2{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.meetmatch p, aside p{
+  font-size: 18px;
+}
+
+footer {
+font-size: 9px;
+}
+
+nav a, .meetmatch p, aside p {
+  font-weight: 300;
+}
+
+/* Hover effects */
+header h1:hover {
+  color: #f7786b;
+  transform: scale(1.1);
+  -webkit-transform:scale(1.1);
+}
+
+nav a:hover{
+  padding: 3px 0;
+  border-radius: 5px;
+  color: #f8e08e;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  font-family: 'Cormorant Infant', serif;
+}
+
+.button:hover, #pagenotice .cancel:hover{
+  background-color: #aa0114;
+  color: #ffffff;
+  box-shadow: 0px 5px #f6011d;
+}
+
+#tagline:hover{
+  background-color:rgba(255,255,255,0.8);
+}
+
+/*For width equal to 1000px but not less than 769px*/
+
+@media only screen and (min-width: 769px) and (max-width: 1000px) {
+  header{
+    padding: 15px;
+  }
+
+  header h1{
+    font-size: 30px;
+    padding-left: 35%;
+  }
+
+  nav ul{
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  nav ul li{
+    display: inline-block;
+    padding-right: 50px;
+    float: left;
+  }
+
+  nav a, #tagline p, h2{
+    font-size: 18px;
+  }
+
+  .meetmatch p, aside p{
+    font-size: 16px;
+  }
+
+  main{
+    margin-top: 110px;
+  }
+}
+
+/*For width equal to 768px but not less than 400px */
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  header, footer{
+    max-width: 30%;
+    bottom: 0;
+  }
+
+  header h1{
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  nav a{
+    font-size: 14px;
+  }
+
+  #tagline p, h2{
+    font-size: 18px;
+  }
+
+  nav ul{
+    float: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  nav ul li{
+    display: block;
+    padding: 10px 0;
+    clear: left;
+  }
+
+  nav a:hover{
+    padding: 0 3px;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  footer {
+    padding: 10px;
+    line-height: 1.3;
+  }
+
+  main{
+    float: right;
+    margin-top: 0;
+    max-width: 70%;
+  }
+
+  .act{
+    float: none;
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .meetmatch>p, aside>p{
+    font-size: 14px;
+  }
+
+  .meetmatch>p{
+    padding: 40px 0;
+  }
+
+  .yellowprofile{
+    padding: 10px 40px;
+  }
+
+  #actions{
+    clear: both;
+    display: block;
+    margin-bottom: 0px;
+  }
+
+  aside{
+    min-width: 100%;
+  }
+}
+
+/*For width lesser than 480px */
+
+@media only screen and (max-width: 479px) {
+  header h1{
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    float: none;
+  }
+
+  .menu{
+    float: right;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    display: block;
+    margin-top: 10px;
+  }
+
+  nav a{
+    font-size: 14px;
+  }
+
+   #tagline p, h2{
+    font-size: 16px;
+  }
+
+  nav ul{
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    float: none;
+    transition: border-bottom 0.5s ease;
+  }
+
+  nav a:hover{ /*remove original formatting*/
+    border: none;
+  }
+
+  nav ul li:hover{
+    border-bottom: 3px solid #ffffff;
+  }
+
+  nav ul li{
+    display: none;
+  }
+
+  main{
+    margin-top: 90px;
+  }
+
+  .act{
+    float: none;
+    margin: 0 auto;
+    width: 300px;
+    height: 320px;
+  }
+
+  .signupform input{
+    margin: 5px 0;
+  }
+
+  .meetmatch>p, aside>p{
+    font-size: 14px;
+  }
+
+  .meetmatch>p{
+    padding: 40px 0;
+  }
+
+  .yellowprofile{
+    padding: 10px 40px;
+  }
+
+  aside{
+    min-width: 100%;
+  }
+}

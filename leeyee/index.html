@@ -3,46 +3,111 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Startup Matchmaker</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,700" rel="stylesheet">
 </head>
 <body>
-	Startup Matchmaker
+	<header class="clearfix">
+		<div class="container">
+			<h1>Startup Matchmaker</h1>
+			<a href="#" class="menu">MENU</a>
+			<nav>
+				<ul>
+					<li><a href="#" onclick="pagenoticefunction()" >Developers</a></li>
+					<li><a href="#" onclick="pagenoticefunction()" >Designers</a></li>
+					<li><a href="#" onclick="pagenoticefunction()" >	How it Works</a></li>
+					<li><a href="#" onclick="pagenoticefunction()" >Our Team</a></li>
+					<li><a href="#" onclick="pagenoticefunction()" >Blog</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section id="tagline">
+			<div class="container">
+				<p>Because two brains <del>taste</del> <ins> are </ins>
+				better than one.</p>
+			</div>
+		</section>
 
-	Developers
-	Designers
-	How it Works
-	Our Team
-	Blog
+		<section id="banner" class="clearfix">
+			<div class="container">
+				<div class="act meetmatch">
+					<h2>Meet your Match!</h2>
+					<p>
+						Have a great idea for a product, but need help making it a reality? We're
+						here to help. Startup Matchmaker is the best place for designers and
+						developers to find each other. <br>
+					</p>
+						<a href="#" onclick="signupfunction()" class="button yellowprofile">create a profile</a>
+					</div>
 
-	Because two brains taste are better than one.
+					<div class="act signupform">
+						<h2>Create a profile</h2>
+						<form action="" id="form">
+							<label for="uname">Username</label>
+					    <input type="text" id="uname" name="username" placeholder="Enter username">
 
-	Meet your Match!
+							<label for="pwd">Password</label>
+					    <input type="text" id="pwd" name="pwd" placeholder="Enter password">
 
-	Have a great idea for a product, but need help making it a reality? We're
-	here to help. Startup Matchmaker is the best place for designers and
-	developers to find each other.
+					    <label for="email">Email</label>
+					    <input type="text" id="email" name="email" placeholder="Enter email">
 
-	Create a Profile
+							<a href="#" onclick="pagenoticefunction()" class="button submit">Create</a>
 
-	Create a Profile
+							<a href="#" onclick="meetmatchfunction()" class="button cancel">Cancel</a>
+						</form>
+					</div>
 
-	Are you a Designer? Developer? Put yourself out there so that others can
-	find you!
+					<div id="pagenotice">
+						<h2>Page under construction...</h2>
+						<p>
+							We thank you for your patience!
+							Look forward to the final updated version of Startup Matchmaker!
+							<a href="index.html"><input type="button" class="button cancel" name="cancel" value="Back to mainpage"></a>
+						</p>
+					</div>
+				</div>
+		</section>
 
-	Sign Up Now
+		<section id="actions" class="clearfix">
+			<div class="container">
+				<aside id="createprofile">
+					<h2>Create a Profile</h2>
+					<p>
+						Are you a Designer? Developer? Put yourself out there so that others can
+						find you!
+					</p>
+					<a href="#" onclick="signupfunction()" class="button createprofile">create a profile</a>
+				</aside>
 
-	Find a Developer
+				<aside id="devsearch">
+					<h2>Find a Developer</h2>
+					<p>
+						Looking for a fantastic developer to work with on the next big thing? Look
+						no further.
+					</p>
+					<a href="#" onclick="pagenoticefunction()" class="button search">Start Your Search</a>
+				</aside>
 
-	Looking for a fantastic developer to work with on the next big thing? Look
-	no further.
-
-	Start Your Search
-
-	Find a Designer
-
-	Need someone who can make a product intuitive and appealing? Get ready.
-
-	Start Your Search
-
-	&copy; 2016 Startup Matchmaker. Made in Singapore.
+				<aside id="dessearch">
+					<h2>Find a Designer</h2>
+					<p>
+						Need someone who can make a product intuitive and appealing? Get ready. <br>
+					</p>
+					<a href="#" onclick="pagenoticefunction()" class="button search">Start Your Search</a>
+				</aside>
+			</div>
+	</section>
+	</main>
+	<footer>
+		<span>&copy; 2016 Startup Matchmaker. Made in Singapore.</span>
+	</footer>
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="js/startup.js"></script>
 </body>
 </html>
