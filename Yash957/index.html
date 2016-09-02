@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Startup Matchmaker</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" type="text/css"
+			 href="https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans">
+	<link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:900i" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Startup Matchmaker</h1>
+		<nav>
+			<ul>
+				<li> <strong>DEVELOPERS</strong> </li>
+				<li> <strong>DESIGNERS</strong> </li>
+				<li> How it Works </li>
+				<li> Our Team </li>
+				<li> Blog </li>
+			</ul>
+		</nav>
+	</header>
+	<div class="because">
+		Because two brains <line-through>taste</line-through> <underline>are</underline> better than one.
+	</div>
+	<div class="main">
+		<div class="createprofilebox">
+			<h3>Create a Profile</h3>
+			<br/>
+			Email: <underline> _____________________ </underline>
+			<br/>
+			Password: <underline> _________________ </underline>
+			<br/>
+			<div class="createprofilebutton">
+				<a href="#" onclick="document.querySelector('.createprofilebox').style.display='none'">
+					CREATE
+				</a>
+			</div>
+			<div class="cancelbutton">
+				<a href="#" onclick="document.querySelector('.createprofilebox').style.display='none';document.querySelector('.profilebox').style.display='initial';">
+					CANCEL
+				</a>
+			</div>
+		</div>
+		<div class="profilebox">
+			<h3>Meet your Match!</h3>
+			Have a great idea for a product, but need help making it a reality? We're
+			here to help. Startup Matchmaker is the best place for designers and
+			developers to find each other.
+			<div class="profilebutton">
+				<a href="#" onclick="document.querySelector('.profilebox').style.display='none'; document.querySelector('.createprofilebox').style.display='initial'">
+					CREATE A PROFILE
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="options">
+		<div class="optionbox">
+			<h2>Create a Profile</h2>
+			Are you a Designer? Developer? Put yourself out there so that others can
+			find you!
+			<div class="gobutton">
+				SIGN UP NOW
+			</div>
+		</div>
+		<div class="optionbox">
+			<h2>Find a Developer</h2>
+			Looking for a fantastic developer to work with on the next big thing? Look
+			no further.
+			<div class="gobutton">
+				START YOUR SEARCH
+			</div>
+		</div>
+		<div class="optionbox">
+			<h2>Find a Designer</h2>
+			Need someone who can make a product intuitive and appealing? Get ready.
+			<div class="gobutton">
+				START YOUR SEARCH
+			</div>
+		</div>
+	</div>
+	<footer>
+		&copy; 2016 Startup Matchmaker. Made in Singapore.
+	</footer>
+</body>
+</html>
