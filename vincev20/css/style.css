@@ -1,0 +1,13 @@
+
+
+header {
+    background: black;
+    color: yellow;
+    height: 77px;
+    border-bottom: 5px solid yellow;
+}
+
+main {
+	height: 300px;
+	background-image: url("../images/coworking.jpg");
+}
