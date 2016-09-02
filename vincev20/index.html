@@ -40,13 +40,15 @@
 		<main>	
 	
 			<div class="createProfile">
-				<h3>Meet your Match!</h3>
+				<h3 class="createProfileHeader">Meet your Match!</h3>
 
-				<p class="commonText">Have a great idea for a product, but need help making it a reality? We're
+				<p class="commonText profileText">Have a great idea for a product, but need help making it a reality? We're
 	here to help. Startup Matchmaker is the best place for designers and
 	developers to find each other.</p>
 
-				<a href="" class="yellowLink">CREATE A PROFILE</a>
+				<a href="#" class="yellowLink">CREATE A PROFILE</a>
+				<a href="#" class="createLink">CREATE</a>
+				<a href="#" class="cancelLink">CANCEL</a>
 
 			</div>
 
@@ -80,7 +82,7 @@
 
 				<p class="commonText">Need someone who can make a product intuitive and appealing? Get ready.</p>
 
-				<a href="" class="grayLink">Start Your Search<a>
+				<a href="" class="grayLink">Start Your Search</a>
 			</div>
 
 		</div>
@@ -92,5 +94,34 @@
 		
 		<p>&copy; 2016 Startup Matchmaker. Made in Singapore.</p>
 	</footer>
+	<script>
+
+	var button = document.querySelector(".yellowLink");
+		button.addEventListener("click", function() {
+  		
+  			document.querySelector(".createProfileHeader").innerHTML = 'Create Profile';
+  			document.querySelector(".profileText").innerHTML = 'Email:_______________<BR><BR>Password:_______________<BR>';
+  			document.querySelector(".yellowLink").classList.toggle("hide");
+  			document.querySelector(".createLink").classList.toggle("show");
+  			document.querySelector(".cancelLink").classList.toggle("show");
+  		//alert("Here");
+
+	})
+
+	var cancelButton = document.querySelector(".cancelLink");
+		cancelButton.addEventListener("click", function() {
+  		
+  			document.querySelector(".createProfileHeader").innerHTML = 'Meet your Match!';
+  			document.querySelector(".profileText").innerHTML = "Have a great idea for a product, but need help making it a reality? We're here to help. Startup Matchmaker is the best place for designers and developers to find each other.";
+  			document.querySelector(".yellowLink").classList.toggle("hide");
+  			document.querySelector(".createLink").classList.toggle("show");
+  			document.querySelector(".cancelLink").classList.toggle("show");
+  		//alert("Here");
+
+	})
+
+
+	</script>
+
 </body>
 </html>
