@@ -1,0 +1,116 @@
+
+div #first {
+  border:2px solid;
+  color: black;
+  text-align: right;
+}
+
+div #second{
+  border:2px solid;
+  color: black
+  text-align: right;
+}
+
+a{
+height: 35px;
+width: 500px;
+background-color: #BDBDBD;
+text-align: center;
+padding-top: 10px;
+border-radius: 5px;
+font-weight: bolder;
+}
+
+.activated {
+  background: red;
+  font-size: 48px;
+  text-decoration: underline;
+  border: 10px solid dotted;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  background-color: black;
+  color: yellow;
+  height: 50px;
+  border-bottom: 3px solid yellow;
+}
+
+h1 {
+  color: yellow;
+float: left;
+}
+
+.tagline {
+  background-color: #BDBDBD;
+  height: 50px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 22px;
+}
+
+.signup {
+height: 35px;
+width: 220px;
+background-color: #BDBDBD;
+text-align: center;
+padding-top: 10px;
+border-radius: 5px;
+font-weight: bolder;
+}
+
+
+.start {
+height: 35px;
+width: 220px;
+background-color: #BDBDBD;
+text-align: center;
+padding-top: 10px;
+border-radius: 5px;
+font-weight: bolder;}
+
+
+#first {
+  height: 200px;
+  width: 240px;
+  border-color: : black;
+}
+
+#second {
+  height: 200px;
+  width: 240px;
+  border-color: : black;
+}
+
+nav {
+  float: right;
+  font-weight: bold;
+  font size: 24px;
+  color: white;
+
+}
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    padding: 20px;
+  }
+
+
+
+
+
+footer {
+  background-color: black;
+  color: white;
+  height: 40px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
