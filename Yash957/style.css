@@ -1,0 +1,182 @@
+body {
+  font-family: 'Open Sans', serif;
+  background-image: url("..\\images\\coworking.jpg");
+  background-position: -140px -140px;
+  background-repeat: no-repeat;
+  background-size: 120% 120%;
+}
+
+header {
+  background-color: black;
+  color:yellow;
+  font-family: 'Suez One', serif;
+  height: 70px;
+  border-bottom: 5px solid yellow;
+}
+
+h1 {
+    font-size: 30px;
+    width: 35%;
+    float: left;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+nav {
+  color: white;
+  font-family: 'Open Sans', serif;
+  float: left;
+  width: 60%;
+  padding-top: 25px;
+}
+
+ul {
+  list-style: none;
+  float: right;
+}
+ul li {
+  float: left;
+  padding-left: 30px;
+}
+
+ul li strong {
+  font-family: 'Francois One', sans-serif;
+  font-size: 25px;
+}
+
+.because {
+  background-color: #aaaaaa;
+  height: 50px;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 20px;
+  font-family: 'Merriweather', serif;
+  box-shadow: 1px 1px 1px #444444;
+}
+
+line-through {
+  text-decoration: line-through;
+  color: grey;
+}
+
+underline {
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}
+
+.main {
+  height: 450px;
+}
+
+.profilebox, .createprofilebox {
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background-color: hsla(220, 100%, 99%, 0.8);
+  padding: 25px 45px 65px 45px;
+  line-height: 1.5em;
+  color: black;
+  box-shadow: 0.5px 0.5px 0.5px #555555 inset;
+  }
+
+  .createprofilebox {
+    display: none;
+  }
+
+.profilebutton {
+  width: 400px;
+  height: 40px;
+  background-color: yellow;
+  opacity: 1;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: 'Francois One', sans-serif;
+  color: black;
+  box-shadow: 5px 5px 2px #888888;
+}
+
+.createprofilebutton, .cancelbutton {
+  width: 150px;
+  height: 40px;
+  background-color: yellow;
+  opacity: 1;
+  text-align: center;
+  float: left;
+  padding-top: 15px;
+  margin: 10px;
+  font-size: 20px;
+  font-family: 'Francois One', sans-serif;
+  color: black;
+  box-shadow: 5px 5px 2px #888888;
+  position: relative;
+  top:30px;
+  left: 30px;
+}
+
+.cancelbutton {
+  background-color: #cccccc;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.options {
+  background-color: white;
+  height: 300px;
+  width: auto;
+}
+
+.gobutton {
+  width: 300px;
+  height: 40px;
+  background-color: #cccccc;
+  opacity: 1;
+  text-align: center;
+  padding-top: 20px;
+  box-shadow: 5px 5px 2px #888888;
+  font-size: 20px;
+  font-family: 'Francois One', sans-serif;
+  color: black;
+  border-radius: 2px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.optionbox {
+  width: 25.5%;
+  height: 200px;
+  float: left;
+  color: black;
+  font-family: 'Open Sans', serif;
+  background-color: white;
+  padding: 20px 50px 40px 40px;
+  border-right: #dddddd 1px solid;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+
+h2,h3 {
+  font-size: 30px;
+  font-family: 'Suez One', serif;
+  color: black;
+  line-height: 1.8em;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 15px;
+  padding: 30px;
+  clear: both;
+}
+
+/*.footertext {
+  border: 2px solid green;
+  margin: auto;
+}*/
