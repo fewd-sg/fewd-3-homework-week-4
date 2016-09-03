@@ -1,14 +1,21 @@
-
-div #first {
-  border:2px solid;
-  color: black;
-  text-align: right;
+#main {
+    width: 960px;
+    margin: 0 auto;
 }
 
-div #second{
-  border:2px solid;
-  color: black
-  text-align: right;
+.bg-box {
+  background: url(../images/coworking.jpg) no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+#first, #second {
+  /*border:2px solid;*/
+  color: black;
+  /*text-align: right;*/
+  float: right;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
 }
 
 a{
@@ -103,7 +110,10 @@ nav {
     padding: 20px;
   }
 
-
+.threeboxes div a {
+  background-color: lightgrey;
+  font-family: sans-serif;
+}
 
 
 
@@ -113,4 +123,5 @@ footer {
   height: 40px;
   padding-top: 20px;
   padding-left: 10px;
+  font-family: sans-serif;
 }

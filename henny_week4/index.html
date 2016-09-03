@@ -7,73 +7,78 @@
 	  <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<header>
-		<h1>Startup Matchmaker</h1>
-<nav>
-	<ul>
-	<li>Developers</li>
-	<li>Designers</li>
-	<li>How it Works</li>
-	<li>Our Team</li>
-	<li>Blog</li>
-<nav>
+	<div id="main">
+		<header>
+				<h1>Startup Matchmaker</h1>
+		<nav>
+			<ul>
+			<li>Developers</li>
+			<li>Designers</li>
+			<li>How it Works</li>
+			<li>Our Team</li>
+			<li>Blog</li>
+		<nav>
 
-</header>
+		</header>
 
-<div class="tagline">
-	<i>Because two brains <s>taste</s> <u>are</u> better than one.</i>
-</div>
+		<div class="tagline">
+			<i>Because two brains <s>taste</s> <u>are</u> better than one.</i>
+		</div>
+		<div class="bg-box">
+			<div id="first" >
+					<p>Meet your Match!</p>
+				<p>	Have a great idea for a product, but need help making it a reality? We're
+					here to help. Startup Matchmaker is the best place for designers and
+					developers to find each other.</p>
+			<a href="#"
+			onclick="document.querySelector('#second').classList.remove('hidden');document.querySelector('#first').classList.add('hidden');">Create a Profile</a>
+			</div>
 
-<div id="first" >
-	<p>Meet your Match!</p>
-	<p>	Have a great idea for a product, but need help making it a reality? We're
-		here to help. Startup Matchmaker is the best place for designers and
-		developers to find each other.</p>
-<a href="#"
-onclick="document.querySelector('#second').classList.remove('hidden');document.querySelector('#first').classList.add('hidden');">Create a Profile</a>
-</div>
-
-<div id="second" class="hidden">
-	<p>Create a Profile</p>
-	<p>Email:______________</p>
-	<p> Password: ____________</p>
-	<a href="#" onclick="document.querySelector('#first').classList.remove('hidden')">Cancel</a>
-</div>
+			<div id="second" class="hidden">
+				<p>Create a Profile</p>
+				<p>Email:______________</p>
+				<p> Password: ____________</p>
+				<a href="#" onclick="document.querySelector('#first').classList.remove('hidden');document.querySelector('#second').classList.add('hidden');">Cancel</a>
+			</div>
+		</div>
 
 
-<div>
-	<b><p>Create a Profile</p></b>
+		<div class="threeboxes">
+			<div>
+				<b><p>Create a Profile</p></b>
 
-	<p>Are you a Designer? Developer? Put yourself out there so that others can
-	find you!</p>
+				<p>Are you a Designer? Developer? Put yourself out there so that others can
+				find you!</p>
 
-<div class="signup">
-	Sign Up Now
-</div>
-</div>
+				<a class="signup" href="#">
+					Sign Up Now
+				</a>
+			</div>
 
-<div>
-	<b><p>Find a Developer</p></b>
+			<div>
+				<b><p>Find a Developer</p></b>
 
-	<p>Looking for a fantastic developer to work with on the next big thing? Look
-	no further.</p>
-<div class="start">
-	Start Your Search
-</div>
-</div>
+				<p>Looking for a fantastic developer to work with on the next big thing? Look
+				no further.</p>
+				<a class="start" href="#">
+					Start Your Search
+				</a>
+			</div>
 
-<div>
-	<b><p>Find a Designer</p></b>
+			<div>
+				<b><p>Find a Designer</p></b>
 
-	<p>Need someone who can make a product intuitive and appealing? Get ready.</p>
+				<p>Need someone who can make a product intuitive and appealing? Get ready.</p>
 
-<div class="start">
-	Start Your Search
-</div>
-</div>
+				<a class="start" href="#">
+					Start Your Search
+				</a>
+			</div>
+		</div>
 
-<footer>
-	&copy; 2016 Startup Matchmaker. Made in Singapore.
-</footer>
+		<footer>
+			&copy; 2016 Startup Matchmaker. Made in Singapore.
+		</footer>
+	</div>
 </body>
 </html>
