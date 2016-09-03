@@ -1,48 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Startup Matchmaker</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600,800" rel="stylesheet">
+
 </head>
+
 <body>
-	Startup Matchmaker
+	<div id="container">
+		<header>
+			<h1>Startup Matchmaker</h1>
 
-	Developers
-	Designers
-	How it Works
-	Our Team
-	Blog
+			<nav>
+				<ul>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Our team</a></li>
+					<li><a href="#">How it Works</a></li>
+					<li><a href="#" class="bold">DESIGNERS</a></li>
+					<li><a href="#" class="bold">DEVELOPERS</a></li>
+					<ul>
+			</nav>
+		</header>
 
-	Because two brains taste are better than one.
+		<div class="quote">
+			<h2>Because two brains <del style="color:grey;">taste</del> <u>are</u> better than one.</h2>
+		</div>
 
-	Meet your Match!
+		<div class="cover">
+			<img src="../images/coworking.jpg">
 
-	Have a great idea for a product, but need help making it a reality? We're
-	here to help. Startup Matchmaker is the best place for designers and
-	developers to find each other.
+			<div class="form">
+				<div class="first show"
 
-	Create a Profile
+				onclick=
+				"document.querySelector('.second').classList.add('show');
+				document.querySelector('.first').classList.remove('show')"; >
 
-	Create a Profile
+				<h2>Meet your Match!</h2>
 
-	Are you a Designer? Developer? Put yourself out there so that others can
-	find you!
+					<p>Have a great idea for a product, but need help making it a reality? We're here to help. Startup Matchmaker is the best place for designers and developers to find each other.</p>
 
-	Sign Up Now
+				<div class="createnow">
+						<a href="#">Create a profile</a>
+					</div>
 
-	Find a Developer
+				</div>
 
-	Looking for a fantastic developer to work with on the next big thing? Look
-	no further.
+				<div class="second"
 
-	Start Your Search
+				onclick=
+				"document.querySelector('.first').classList.add('show');
+				document.querySelector('.second').classList.remove('show')";>
 
-	Find a Designer
+			<h2>Create a profile</h2>
 
-	Need someone who can make a product intuitive and appealing? Get ready.
+				<p>Email:__________________</p>
+				<p>Password:_______________</p>
 
-	Start Your Search
+				<ul>
+					<li><a href="#">CREATE</a></li>
+					<li><a href="#" style="background-color: grey; color:white">CANCEL</a></li>
+				</ul>
 
-	&copy; 2016 Startup Matchmaker. Made in Singapore.
+				</div>
+			</div>
+
+		</div>
+
+		<main>
+			<h3>Create a Profile</h3>
+
+			<p>Are you a Designer? Developer? Put yourself out there so that others can find you!
+			</p>
+			<br>
+			<br>
+			<a href="#" class="signbutton">Sign Up Now</a></li>
+			<br>
+			<br>
+			<br>
+			<h3>Find a Developer</h3>
+
+			<p>Looking for a fantastic developer to work with on the next big thing? Look no further.
+			</p>
+			<br>
+			<br>
+			<a href="#" class="searchbutton1">Start Your Search</a></li>
+			<br>
+			<br>
+			<h3>Find a Designer</h3>
+
+			<p>Need someone who can make a product intuitive and appealing? Get ready.
+			</p>
+			<br>
+			<br>
+			<br>
+
+			<a href="#" class="searchbutton2">Start Your Search</a></li>
+			<br>
+			<br>
+
+		</main>
+
+		<footer>
+			&copy; 2016 Startup Matchmaker. Made in Singapore.
+		</footer>
+	</div>
+	<!-- #container -->
 </body>
+
 </html>
