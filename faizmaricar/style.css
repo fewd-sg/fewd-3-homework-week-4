@@ -1,0 +1,158 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,800';
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+}
+a{
+    text-decoration: inherit;
+    color: inherit;
+    transition: font .3s ease;
+}
+a:hover{
+    font-size: 20px;
+    padding: 0px;
+}
+.align-left{
+    margin-left: 10px;
+}
+.align-right{
+    float: right;
+    margin-right: 20px;
+}
+div, header, main, nav, section, footer{
+    display: inline-block;
+}
+
+.logo{
+    color: yellow;
+}
+.box{
+    font-family: 'Open Sans', sans-serif;
+}
+.box-header{
+    font-weight: bold;
+}
+.box-text{
+}
+.button{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(255, 255, 0, 1.0);
+    border-radius: 5px;
+    font-weight: 800;
+    padding:10px;
+}
+
+header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    border-bottom: 2px solid yellow;
+    
+}
+header h1{
+    padding: 10px 0;
+}
+
+header nav{
+    color: white;
+    font-family:fantasy;
+
+    
+}
+
+header h1, header nav{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header nav ul li{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px 10px;
+}
+
+header nav ul li:nth-child(1), header nav ul li:nth-child(2){
+    text-transform: uppercase;
+    font-weight:bold;
+}
+main{
+    position:absolute;
+    top:60px;
+    right: 0;
+    left:0;
+    z-index: -1;
+}
+.tagline{
+    position:absolute;
+    left: 0;
+    right:0;
+    text-align: center;
+    background-color: darkgray;
+    padding: 10px 0;
+    font-style: italic;
+   
+}
+.banner{
+    background-image: url(../images/coworking.jpg);
+    background-size: cover;
+    position:absolute;
+    top:47px;
+    left: 0;
+    right:0;
+    height: 664px;
+}
+.create-profile{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 300px;
+    position:absolute;
+    top: 100px;
+    right:0;
+    padding: 20px;
+}
+.create-profile > *{
+    padding: 10px;
+}
+.create-profile-dialog{
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 300px;
+    position:absolute;
+    top: 100px;
+    right:0;
+    padding: 20px;
+}
+.create-profile-dialog > *{
+    padding: 10px;
+}
+.options{
+    position:relative;
+    top: 500px;
+    right:0;
+    left:0;
+    background-color: white;
+}
+.options > section{
+    width:406px;
+    padding: 10px;
+    
+}
+.options > section > *{
+    padding: 10px;
+}
+.options > section > p:nth-child(3){
+    background-color: darkgray;
+}
+footer{
+    background-color: black;
+    color:white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right:0;
+    border-bottom: 2px solid yellow;
+    padding: 10px 0px;
+}

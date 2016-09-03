@@ -1,0 +1,100 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: black;
+  color: yellow;
+  padding: 10px;
+  height: 70px;
+  border-bottom:5px solid yellow;
+}
+nav h1 {
+  float: left;
+}
+nav ul {
+  float: right;
+}
+nav ul li{
+  color: white;
+  display: inline;
+  padding-right: 10px;
+}
+nav ul li:nth-child(1), nav ul li:nth-child(2) {
+  text-transform: uppercase;
+}
+
+.quote {
+  background: lightgrey;
+  padding: 2px;
+  text-align: center;
+  font-style: italic;
+}
+
+.greytext {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.yellowstroke {
+  border-bottom: 3px solid yellow;
+}
+
+.bg {
+  background: url(../../images/coworking.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  height: 250px;
+}
+
+.match{
+  width: 400px;
+  float: right;
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+height: 170px;
+margin-top:20px;
+margin-right: 20px;
+font-family: sans-serif;
+box-shadow: 0 1px 1px black;
+}
+
+.match a, .threeboxes div a {
+  background: yellow;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 5px;
+  color: black;
+  font-weight: bold;
+}
+.threeboxes {
+  padding: 20px 40px;
+}
+.threeboxes div {
+  width: 30%;
+  display: inline-block;
+}
+
+.threeboxes div + div {
+  padding-left: 5%;
+}
+
+.threeboxes div a {
+  background: lightgrey;
+  font-family: sans-serif;
+}
+
+.threeboxes p {
+  font-family: sans-serif;
+}
+
+footer {
+background: black;
+padding: 10px;
+color: white;
+font-family: sans-serif;
+}
