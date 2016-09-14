@@ -1,0 +1,358 @@
+/*
+Project Name: Startup Matchmaker
+Client: Startup Matchmaker
+Author: Sherman
+Developer @GA in NYC
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 960px;
+  margin: auto;
+  background: #f0efef;
+
+}
+
+header {
+  height: 90px;
+  background-color: black;
+  border-style: solid;
+  border-bottom: 4px solid #f9e42e;
+  padding:20px;
+  position: fixed;
+  top: 0px;
+  right: 230px;
+  left: 230px;
+  z-index: 900;
+}
+
+.quote{
+  height: 60px;
+  background-color: #c6c6c6;
+  text-align: center;
+}
+
+.main{
+  width: 700px;
+  padding: 20px;
+}
+
+.aside{
+  float: right;
+  width: 240px;
+  padding: 20px;
+}
+
+.signup {
+  height: 80px;
+  background-color: #f9e42e;
+  position: relative;
+  }
+
+
+footer {
+  height: 80px;
+  background-color: #121212;
+  text-align: left;
+  color: white;
+  padding: 30px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+u{
+  text-decoration: none;
+  border-bottom: 3px solid #f9e42e;
+}
+
+.quote h2{
+  padding: 15px;
+  color: black;
+  font-style: italic;
+}
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-weight: 800;
+  padding: 10px;
+  font-size: 20px;
+  color: #f9e42e;
+  float: left;
+}
+
+h2{
+  font-weight: 800;
+  font-size: 20px;
+  color: #033048;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+p{
+  font-weight: 300;
+  font-size: 15px;
+}
+
+h3{
+  font-weight: 600;
+  font-size: 20px;
+  color: #033048;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+h4{
+  font-weight: 800;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #033048;
+}
+
+h5{
+  font-weight: 600;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #033048;
+
+}
+
+
+.footerlogo{
+  font-weight: 800;
+  font-size: 30px;
+  color: #f9e42e;
+}
+
+.button{
+  font-weight: 600;
+  font-size: 15px;
+}
+
+nav a{
+  text-decoration: none;
+  list-style: none;
+  float: right;
+  display: inline-block;
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  align-content: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.bold{
+  font-weight: 800;
+}
+
+nav a:hover{
+  color: yellow;
+}
+
+.button{
+  background-color: #033048;
+  border-radius: 5px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.cover{
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+}
+
+img{
+  position:relative;
+  top:-150px;
+  width: 100%;
+
+}
+
+main{
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  height: 250px;
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+  -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 30px; /* Firefox */
+  column-gap: 30px;
+  -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+  -moz-column-rule-style: solid; /* Firefox */
+  column-rule-style: solid;
+  -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+  -moz-column-rule-width: 1px; /* Firefox */
+  column-rule-width: 1px;
+  -webkit-column-rule-color: #c6c6c6; /* Chrome, Safari, Opera */
+  -moz-column-rule-color: #c6c6c6; /* Firefox */
+  column-rule-color: #c6c6c6;
+}
+
+main a{
+  background-color: #c6c6c6;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 70px;
+  text-align: center;
+  color: #121212;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 15px;
+
+}
+.signbutton{
+    padding: 10px 90px;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+#contentmain{
+  margin-top: 90px;
+  z-index: 950;
+}
+
+/******************************************
+/* FORM STYLES
+/*******************************************/
+
+.form{
+  position: absolute;
+  top: 45%;
+  left: 70%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.first{
+  width: 350px;
+  height: 250px;
+  display: none;
+  padding: 20px;
+  padding-right: 30px;
+  padding-top: 10px;
+  background-color: rgba(240, 239, 239, 0.8);
+  border-radius: 5px;
+  border: none;
+}
+
+.second{
+  width: 350px;
+  height: 250px;
+  display: none;
+  padding: 20px;
+  padding-right: 30px;
+  background-color: rgba(240, 239, 239, 0.8);
+  border-radius: 5px;
+  border: none;
+}
+
+.show{
+   display: inline-block;
+}
+
+.createnow{
+  background-color: #f9e42e;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: 10px;
+  float: left;
+  transition: all 0.5s;
+}
+
+.createnow:hover {
+  background-color: grey;
+}
+
+.createnow a{
+  text-decoration: none;
+  font-weight: 800;
+  color: black;
+}
+
+.second a{
+  background-color: #f9e42e;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  float: left;
+  text-decoration: none;
+  font-weight: 800;
+  color: black;
+}
